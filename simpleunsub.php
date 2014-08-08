@@ -106,10 +106,3 @@ function simpleunsub_civicrm_caseTypes(&$caseTypes) {
 function simpleunsub_civicrm_alterSettingsFolders(&$metaDataFolders = NULL) {
   _simpleunsub_civix_civicrm_alterSettingsFolders($metaDataFolders);
 }
-
-function simpleunsub_civicrm_pageRun(&$page) {
-  if ($page->getVar('_name') == 'CRM_Mailing_Page_Unsubscribe') {
-    $smarty = CRM_Core_Smarty::singleton();
-    $smarty->assign('groups', '');
-  }
-}
